@@ -39,4 +39,4 @@ jobs:
       with:
         token: ${{ github.token }}
         title: Simple test issue
-        body: my new issue
+        body: ${{ steps.write-good.outputs.result }}
